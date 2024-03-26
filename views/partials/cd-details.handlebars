@@ -1,0 +1,50 @@
+   <table class="table_block mpitems push_down table_responsive">
+      <thead>
+        <tr>
+          <th class="info_head" colspan="2">Disc List</th>
+          <th class="seller_head">Users</th>
+          <th class="price_head">$</th>
+          <th class="format_head">Vinyl, CD, Cassettes</th>
+          <th class="add_save">Save</th>
+          <th class="add_cart">Purchase</th>
+        </tr>
+      </thead>      
+      <tbody>
+        <tr class="disc_item">
+{{#each cds as |disc| }}
+          <td class="disc_img">
+          {{#if disc.cover_art}}
+            <img class="cover-art" src="{{disc.cover_art}}" alt="{{disc.album_title}}" />
+                {{else}}
+                <img class="cover-art" src="/img/disc-icon.png">
+            {{/if}}
+            {{!-- <a href="/listing/{{disc.id}}">{{disc.artist}}</a> --}}
+          </td>
+          <td class="disc_desc">
+            <a href="/listing/{{disc.id}}"><strong>{{disc.album_title}}</strong></a>
+            <br>
+            <p>Artist: {{disc.artist}}</p>
+            <br>
+            <p>Condition: {{disc.condition}}</p>
+            <br>
+            <p>Description: {{disc.description}}</p>
+          </td>
+          <td class="seller_info">Seller: {{user.name}}</td>
+          <td class="item_price">Price: ${{disc.price}}</td>
+          <td class="item_format">Format: {{disc.format}}</td>
+          <td class="save_button">
+            <button id="addFavoriteBtn" 
+            class="btn btn-sm btn-danger addFavoriteBtn"
+            data-id="{{disc.id}}">Save to Favorites</button>
+          </td>
+          <td class="cart_button">
+            <button id="addCartBtn"
+            class="btn btn-sm btn-danger addCartBtn"
+            data-id="{{disc.id}}">Add to Cart</button>
+          </td>
+        </tr>
+{{/each}}
+      </tbody>
+    </table>
+    <script src="/js/saveheart.js"></script>
+    <script src="/js/addtocart.js"></script>

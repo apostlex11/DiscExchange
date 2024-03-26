@@ -1,0 +1,74 @@
+<div class="log-container-profile">
+    <div class="card-wrap-profile pad-log">
+        <form class="form" id="new-listing-form" enctype="multipart/form-data" action="/api/listings" method="post">
+            <div class="log-form">
+                <span class="log-title pad-title">Create New Listing</span>
+
+                <span class="text pad-text">Album Title</span>
+                <div class="log-input-wrap pad-box">
+                    <input class="input-here" type="text" id="listing-name">
+                </div>
+
+                <span class="text pad-text">Album Artist</span>
+                <div class="log-input-wrap pad-box">
+                    <input class="input-here" type="text" id="listing-artist">
+                </div>
+
+                <span class="text pad-text">Album Release Date</span>
+                <div class="log-input-wrap pad-box">
+                    <input class="input-here" type="text" id="listing-release" placeholder="YYYY-MM-DD">
+                </div>
+
+                <span class="text pad-text">Album Format</span>
+                <div class="log-input-wrap pad-box">
+                    <input class="input-here" type="text" id="listing-format" placeholder="vinyl, CD, or cassette">
+                </div>
+
+                <span class="text pad-text">Album Condition</span>
+                <div class="log-input-wrap pad-box">
+                    <input class="input-here" type="text" id="listing-condition" placeholder="New, Good, or Fair">
+                </div>
+
+                <span class="text pad-text">Album Genre</span>
+                <div class="log-input-wrap pad-box">
+                    <input class="input-here" type="text" id="listing-genre">
+                </div>
+
+                <span class="text pad-text">Link to Album Cover Art</span>
+                <div class="log-input-wrap pad-box">
+                    <input class="input-here" type="text" id="listing-cover"
+                        placeholder="Enter a URL of the cover art using 'open image in new tab' link">
+                </div>
+
+
+                <span class="text pad-text">or Upload Cover Art File</span>
+                <div class="log-input-wrap pad-box">
+                    <input class="form-control-file" type="file" name="uploaded_file"
+                    id="uploaded_file">
+                </div>
+              
+
+                <span class="text pad-text">Album Description</span>
+                <div class="log-input-wrap pad-box">
+                    <input class="input-here" type="text" id="listing-desc">
+                </div>
+
+                <span class="text pad-text">Label Released Under</span>
+                <div class="log-input-wrap pad-box">
+                    <input class="input-here" type="text" id="listing-label" placeholder="TDE? EMI? Brainfeeder?">
+                </div>
+
+                <span class="text pad-text">Price</span>
+                <div class="log-input-wrap pad-box">
+                    <input class="input-here" type="number" id="listing-price" />
+                </div>
+
+                <div class="login-button-container">
+                    <button type="submit" class="btn btn-primary"> Create Listing </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/js/newlisting.js"></script>

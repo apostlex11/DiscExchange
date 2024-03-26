@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE-edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/jass.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <title>Discs Exchange</title>
+</head>
+
+<!-- Top header -->
+<body>
+    <header>
+        <div id="top-header">
+            <div class="container">
+                <ul class="header-links pull-right">
+                    <li><a href="#"><i class="fa fa-user-o"></i>Login</a></li>
+                    <li><a href="#"><i class="fa fa-user-o"></i>SignUp</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Header with Brand Logo-->
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="header-logo">
+                            <a href="#" class="logo">
+                                <img src="../img/disc-2.png" alt="Brand Logo">
+                            </a>
+                        </div>
+                    <!--Search Bar-->
+                    <div class="col-md-6">
+                        <div class="header-search">
+                            <form>
+                                <select class="input-select">
+                                    <option value="0">All</option>
+                                    <option value="1">Vinyls</option>
+                                    <option value="2">CDs</option>
+                                </select>
+                                <input class="input" placeholder="Search Here">
+                                <button class="search-btn">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--Account + Saved items-->
+                    <div class="col-md-3 cleared">
+                        <div class="header-acc">
+                            <div>
+                                <a href="#">
+                                    <i class="fa fa-heart-o"></i>
+                                    <span>Saved</span>
+                                    <div class="quantity">{{item.id.count}}</div>
+                                </a>
+                            </div>
+                            <!--Shopping cart, not fully functional dropdown-->
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span>Cart</span>
+                                    <div class="quantity">{{item.id.count}}</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Navi Bar-->
+    <nav id="navigation">
+        <div class="container">
+            <div id="responsive-nav">
+                <ul class="main-nav nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="#">Vinyl</a></li>
+                    <li><a href="#">CD</a></li>
+                    <li><a href="#">Sell</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--List-->
+    <div class="listing-section">
+        <ul>
+            {{#each}}
+            <li>{{disc.id}}</li>
+            <li>{{disc.artist}}</li>
+            <li>{{disc.des}}</li>
+        </ul>
+    </div>
+
+    <footer id="footer">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">About us</h3>
+                            <p>List your disc and sell it, or purchase
+                                a disc from other users.
+                            </p>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class="fa fa-envelope-o"></i>discExchange@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">All items</a></li>
+                                <li><a href="#">Only Vinlys</a></li>
+                                <li><a href="#">Only CDs</a></li>
+                                <li><a href="#">Sell disc</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cleared visible-xs"></div>
+
+                    <div class="col-md-2 col-xs-8">
+                        <div class="footer">
+                            <h3 class="footer-title">Info</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Order & Return</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-xs-8">
+                        <div class="footer">
+                            <h3 class="footer-title">Services</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">My Cart</a></li>
+                                <li><a href="#">Saved items</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</html>

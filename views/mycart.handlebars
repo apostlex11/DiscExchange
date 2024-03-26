@@ -1,0 +1,68 @@
+<section class="cart-item-section">
+    <h1>Your Shopping Cart</h1>
+    <br>
+
+    <table class="table_block mpitems push_down table_responsive">
+        <thead>
+            <tr>
+                <th class="info_head" colspan="2">Disc List</th>
+                <th class="seller_head">Users</th>
+                <th class="price_head">$</th>
+                <th class="format_head">Vinyl, CD, Cassettes</th>
+                <th class="add_save">Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="disc_item">
+                {{#each cartItems}}
+                <td class="disc_img">
+                    {{#if listing.cover_art}}
+                    <img class="cover-art" src="{{listing.cover_art}}" alt="{{listing.artist}}" />
+                    {{else}}
+                    <img class="cover-art" src="/img/disc-icon.png">
+                    {{/if}}
+                </td>
+                <td class="disc_desc">
+                    <a href="/listing/{{listing.id}}"><strong>{{listing.album_title}}</strong></a>
+                    <br>
+                    <p>Artist: {{listing.artist}}</p>
+                    <br>
+                    <p>Condition: {{listing.condition}}</p>
+                    <br>
+                    <p>Description: {{listing.description}}</p>
+                </td>
+                <td class="seller_info">Seller: {{listing.user.name}}</td>
+                <td class="item_price">Price: ${{listing.price}}</td>
+                <td class="item_format">Format: {{listing.format}}</td>
+                <td class="remove_button">
+                    <button id="cartRemoveBtn" class="btn btn-sm btn-danger cartRemoveBtn"
+                        data-id="{{listing.id}}">Remove From Cart</button>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</section>
+<section class="mycart">
+    <h2 class="total-cart1">Your Subtotal: ${{subtotal}} </h2>
+    <form id="form2" action="/create-checkout-session" method="POST">
+    <button type="submit" id="cartPurchaseBtn1" class="btn btn-sm btn-danger cartPurchaseBtn1">Proceed
+        to
+        Checkout</button>
+        </form><br>
+</section>
+{{!-- <section class="mycart">
+    <h2 class="total-cart1">Your Subtotal: ${{subtotal}} </h2>
+    <button id="cartPurchaseBtn1" class="btn btn-sm btn-danger cartPurchaseBtn1" data-id="{{listing.id}}">Proceed
+        to
+        Checkout</button>
+</section> --}}
+
+
+
+
+<script src="/js/addtocart.js"></script>
+<script src="/js/removefromcart.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
+
+

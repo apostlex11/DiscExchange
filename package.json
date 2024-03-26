@@ -1,0 +1,41 @@
+{
+  "name": "DiscExchange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server",
+    "seed": "node seeds/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apostlex11/DiscExchange.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stripe/stripe-js": "^3.0.10",
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dayjs": "^1.11.7",
+    "dotenv": "^8.2.0",
+    "express": "^4.18.2",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "express-visitor-counter": "^1.4.0",
+    "handlebars": "^4.7.6",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5",
+    "stripe": "^14.22.0",
+    "visit-counter": "^1.0.5"
+  },
+  "bugs": {
+    "url": "https://github.com/apostlex11/DiscExchange/issues"
+  },
+  "homepage": "https://github.com/apostlex11/DiscExchange#readme",
+  "devDependencies": {}
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "artist": "Bon Iver",
+    "album_title": "Bon Iver",
+    "format": "vinyl",
+    "description": "Iconic 2nd album from American indie folk sensation Bon Iver.",
+    "release_date": "2011-6-17",
+    "cover_art": "https://upload.wikimedia.org/wikipedia/en/5/5f/Bon_iver.jpg",
+    "condition": "Good",
+    "label": "Jagjaguwar",
+    "price": 19.00,
+    "genre": "Alternative",
+    "user_id": 1
+  },
+  {
+    "artist": "Kendrick Lamar",
+    "album_title": "To Pimp A Butterfly",
+    "format": "vinyl",
+    "description": "Classic 3rd album from celebrated hip-hop artist Kendrick Lamar.",
+    "release_date": "2015-3-15",
+    "cover_art": "https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png",
+    "condition": "New",
+    "label": "TDE",
+    "price": 24.99,
+    "genre": "Hip-Hop",
+    "user_id": 2
+  },
+  {
+    "artist": "Pink Floyd",
+    "album_title": "The Wall",
+    "format": "CD",
+    "description": "Acclaimed album from the visionary psychedelic rock band Pink Floyd.",
+    "release_date": "1979-11-30",
+    "cover_art": "https://upload.wikimedia.org/wikipedia/en/1/13/PinkFloydWallCoverOriginalNoText.jpg",
+    "condition": "Fair",
+    "label": "Harvest",
+    "price": 14.99,
+    "genre": "Psychedelic Rock",
+    "user_id": 2
+  },
+  {
+    "artist": "Animal Collective",
+    "album_title": "Merriweather Post Pavilion",
+    "format": "CD",
+    "description": "Beloved 8th album from indie psychedelic pop outfit Animal Collective.",
+    "release_date": "2009-1-6",
+    "cover_art": "https://upload.wikimedia.org/wikipedia/en/5/5a/Animal_Collective_-_Merriweather_Post_Pavilion.png",
+    "condition": "New",
+    "label": "Domino",
+    "price": 9.99,
+    "genre": "Indie",
+    "user_id": 3
+  },
+  {
+    "artist": "Death Grips",
+    "album_title": "The Money Store",
+    "format": "cassette",
+    "description": "Classic industrial/experimental rap album from enigmatic group Death Grips.",
+    "release_date": "2012-4-24",
+    "cover_art": "https://upload.wikimedia.org/wikipedia/en/thumb/a/af/Death_Grips_-_The_Money_Store.jpg/220px-Death_Grips_-_The_Money_Store.jpg",
+    "condition": "Good",
+    "label": "Epic",
+    "price": 16.00,
+    "genre": "Industrial",
+    "user_id": 3
+  },
+  {
+    "artist": "A Tribe Called Quest",
+    "album_title": "Low End Theory",
+    "format": "cassette",
+    "description": "Legendary studio album from the golden-age hiphop trio/collective ATCQ.",
+    "release_date": "1991-9-24",
+    "cover_art": "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/ATribeCalledQuestTheLowEndtheory.jpg/220px-ATribeCalledQuestTheLowEndtheory.jpg",
+    "condition": "Fair",
+    "label": "Jive",
+    "price": 10.00,
+    "genre": "Hip-Hop",
+    "user_id": 2
+  }
+]
